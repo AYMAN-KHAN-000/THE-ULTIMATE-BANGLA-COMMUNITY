@@ -1,0 +1,360 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    
+    background: rgba(141, 140, 140, 0.331);
+
+}
+
+.all{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    width: 100%;
+    height: 75px;
+    background: #195b4050;
+    display: flex;
+    position: fixed;
+    padding: 5px;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.237);
+    z-index: +1;
+    
+
+  
+    button{
+        height: 100%;
+        width: 100px;
+        background: transparent;
+        border: none;
+        color: aliceblue;
+        font-size: medium;
+        font-weight: bold;
+
+    }
+    .pages{
+        padding-left: 3px;
+    }
+    button:hover{
+        border-bottom: 4px solid #13563a;
+        
+
+    }
+   
+}
+
+.logo{
+    height: 100%;
+    margin: auto 20px;
+    transition: 0.1s;
+}
+.logo:hover{
+    height: 100%;
+    rotate: 10deg;
+   
+}
+.logo:active{
+    height: 97%;
+    rotate: 0deg;
+}
+.lgos{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-right: 4px;
+    height: 100%;
+    display: flex;
+    width: auto;
+    border-right: 2px solid  rgba(0, 0, 0, 0.237);
+ 
+}
+.about{
+    border-bottom: 3px solid #13563a;
+    background: linear-gradient(to top, #13563a, transparent);
+
+
+
+}
+.HOME{
+    border-bottom: 3px solid #13563a;
+    background: linear-gradient(to top, #13563a, transparent);
+}
+
+.join{
+    border-bottom: 3px solid #13563a;
+    background: linear-gradient(to top, #13563a, transparent);
+}
+
+
+
+
+
+
+
+
+.section{
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+
+}
+
+
+
+
+
+
+.card{
+    
+    color: aliceblue;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    height: 300px;
+    width: 250px;
+    background: #232323;
+
+    & .lon{
+        background-color: #2e2e2e;
+        padding: 5px;
+        display: flex;
+        width: 100%;
+        height: 70px;
+
+        h1{
+            font-size: 20px;
+            margin: auto;
+        }
+
+        img{
+            height: 100%;
+            width: auto;
+        }
+
+    }
+    & .lto{
+        
+        margin: auto;
+        margin-top: 10px;
+        margin-right: 5px;
+        padding: 5px;
+
+        p{
+            margin-right: 10px;
+            font-size: 15px;
+        }
+       
+    }
+    & .lth{
+        position: relative;
+        width: 100%;
+        height: auto;
+        button{
+            left: 10px;
+            top: 90px;
+            height: 30px;
+            width: 90%;
+            margin: auto;
+            position: relative;
+            font-size: medium;
+            font-weight: bold;
+            border-radius: 5px;
+            color: white;
+            border: none;
+            background: #13563a;
+
+
+        }
+    }
+}
+
+.ico{
+    top: 70px;
+    
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    img{
+        position: relative;
+        width: 100%;
+        z-index: -1;
+    }
+
+    div{
+        border-bottom: 2px solid gray;
+        margin-top: 10px;
+        padding: 5px;
+        padding-bottom: 20px;
+        p{
+            text-align: center;
+        }
+    }
+}
+
+a{
+    color: #00653a;
+    cursor: pointer;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 70PX;
+    background: #2e2e2e;
+    bottom: 0PX;
+    top: 500PX;
+    color: aliceblue;
+
+    p{
+        
+        position: relative;
+        text-align: center;
+        top: 10px;
+    }
+}
+.ft{
+    height: 70px;
+    margin: 0px;
+    padding: 0px;
+    top: 20px;
+}
+
+.joindiv{
+    top: 150px;
+    margin: 0 auto;
+    height: 350px;
+    width: 90%;
+}
+
+.jo{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    transition: 0.3s;
+}
+.jo:hover{
+    width: 95%;
+}
+
+
+@media screen and (max-width: 1880px){
+    footer{
+        top: 950px;
+    }
+}
+@media screen and (max-width: 780px){
+    .joindiv{
+        top: 220px;
+        height: 250px;
+        
+    }
+}
+@media screen and (max-width: 550px){
+
+.jo{
+    width: 90%;
+}
+.joindiv{
+    top: 220px;
+    height: 250px;
+    
+}
+
+nav{
+    flex-direction: column;
+    height: 100px;
+    
+    & .lgos{
+        margin: auto 0;
+        height: 50%;
+
+        h1{
+            font-size: 15px;
+        }
+}
+
+.pages{
+    margin: 5px auto ;
+}
+
+
+
+
+}
+
+.ico{
+    top: 100px;
+
+    div{
+        margin-bottom: 30px;
+ 
+    }
+
+    .section{
+        width: 80%;
+        flex-direction: column;
+    }
+
+}
+
+.pag{
+    position: relative;
+    width: 100%;
+    margin: 50px;
+     text-align: center;
+}
+
+
+
+
+
+
+footer{
+    height: 70px;
+    top: 600px;
+}
+ .ft{
+    p{
+        font-size: 10px;
+    }
+ }
+
+ .ftt{
+    font-size: 10px;
+ }
+
+}
+
+
+
+
+
+
+
+
+/* scrollbar */
+/* For WebKit br20pxowsers */
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 0px;
+    height: 10px;
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: black transparent;
+}
